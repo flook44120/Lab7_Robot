@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-09T22:40:18.452827" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT-Lab7-001" source="D:\University\Year3\เทอม2\software engineer\lab\Software en lab7\WebDemo-master\login_tests\UAT-Lab7-001.robot">
+<test id="s1-t1" name="✅ Test Case: กรอกข้อมูลครบถ้วน" line="19">
+<kw name="Open Chrome Browser" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-01-09T22:40:18.638700" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x00000243A1655400&gt;</msg>
+<var>${service}</var>
+<arg>sys.modules['selenium.webdriver.chrome.service'].Service('${CHROMEDRIVER}')</arg>
+<arg>sys, selenium.webdriver.chrome.service</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-01-09T22:40:18.638236" elapsed="0.000491"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:18.638951" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<arg>service=${service}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-01-09T22:40:18.638833" elapsed="1.044191"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:19.683305" level="INFO">Opening url 'http://localhost:7272/Form.html'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-09T22:40:19.683177" elapsed="0.334292"/>
+</kw>
+<status status="PASS" start="2025-01-09T22:40:18.637826" elapsed="1.379824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.018211" level="INFO">Typing text 'Somsong' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Somsong</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.017952" elapsed="0.069885"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.088436" level="INFO">Typing text 'Sandee' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sandee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.088215" elapsed="0.048490"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.137169" level="INFO">Typing text 'Europe' into text field 'id=destination'.</msg>
+<arg>id=destination</arg>
+<arg>Europe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.137015" elapsed="0.038027"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.175522" level="INFO">Typing text 'Sodsai Sandee' into text field 'id=contactperson'.</msg>
+<arg>id=contactperson</arg>
+<arg>Sodsai Sandee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.175360" elapsed="0.039566"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.215410" level="INFO">Typing text 'Mother' into text field 'id=relationship'.</msg>
+<arg>id=relationship</arg>
+<arg>Mother</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.215256" elapsed="0.036528"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.252253" level="INFO">Typing text 'somsong@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>somsong@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.252096" elapsed="0.075104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.327766" level="INFO">Typing text '081-111-1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>081-111-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.327561" elapsed="0.042237"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.370535" level="INFO">Clicking button 'id=submitButton'.</msg>
+<arg>id=submitButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.370366" elapsed="0.045607"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Our agent will contact you shortly.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.416422" elapsed="0.211897"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-09T22:40:20.689349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="result_%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%96%E0%B9%89%E0%B8%A7%E0%B8%99.png"&gt;&lt;img src="result_%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%96%E0%B9%89%E0%B8%A7%E0%B8%99.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>result_กรอกข้อมูลครบถ้วน.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.628578" elapsed="0.060851"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-09T22:40:20.689743" elapsed="2.293688"/>
+</kw>
+<status status="PASS" start="2025-01-09T22:40:18.637030" elapsed="4.346601"/>
+</test>
+<status status="PASS" start="2025-01-09T22:40:18.453807" elapsed="4.530304"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="UAT-Lab7-001">UAT-Lab7-001</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-09T22:40:18.636103" level="WARN">Imported library 'selenium.webdriver.chrome.service' contains no keywords.</msg>
+</errors>
+</robot>
